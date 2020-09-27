@@ -1,4 +1,4 @@
-import bodyParser from 'body-parser';
+import BodyParser from 'body-parser';
 import Express from "express";
 
 class Server {
@@ -21,17 +21,16 @@ class Server {
         });
     }
 
-    private initializeMiddleware() {
-        this.app.use(bodyParser.urlencoded({ extended:true })); // ?
-        this.app.use(bodyParser.json({ limit: '50mb' }));
+    private initializeMiddleware(): void {
+        this.app.use(BodyParser.urlencoded({ extended:true }));
+        this.app.use(BodyParser.json({ limit: '50mb' }));
     }
 
-    private initializeControllers(controllers: any[]) {
+    private initializeControllers(controllers: any[]): void {
         controllers.forEach((controller: any) => {
             this.app.use(controller.getBasePath(), controller.getRouter());
         });
     }
-
 }
 
 export default Server;
