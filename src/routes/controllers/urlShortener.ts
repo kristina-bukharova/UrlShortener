@@ -55,7 +55,7 @@ export default class UrlShortener extends Route {
         try {
             const dbRecord = await this.databaseClient.getUrlInfo(id);
             if (!dbRecord) {
-                return response.status(404).send("No record for the given URL hash.");
+                return response.status(404).send("No record exists for the given URL hash.");
             }
             const urlDetails: UrlDetails = {
                 id: dbRecord.id,

@@ -1,10 +1,6 @@
 import BodyParser from "body-parser";
 import Express, { Router } from "express";
-
-export interface IBaseRoute {
-    getRouter(): Express.Router;
-    getBasePath(): string;
-}
+import { IBaseRoute } from "./IBaseRoute";
 
 export default abstract class Route implements IBaseRoute {
     protected router: Express.Router = Router();
