@@ -4,8 +4,9 @@
   "description": "A simple service to shorten URLs.",
   "main": "index.js",
   "scripts": {
-    "test": "jest",
-    "start:debug": "nodemon src/app.ts"
+    "start:debug": "nodemon src/app.ts",
+    "start": "node dist/src/app.js",
+    "build": "node_modules/.bin/tsc"
   },
   "author": "Kristina Bukharova",
   "license": "ISC",
