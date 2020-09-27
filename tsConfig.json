@@ -1,0 +1,51 @@
+{
+    "compilerOptions": {
+      "module": "commonjs",
+      "target": "es5",
+      "lib": [
+        "es7",
+        "es2015",
+        "es2017",
+        "esnext",
+        "dom"
+      ],
+      "resolveJsonModule": true,
+      "sourceMap": true,
+      "allowJs": false,
+      "jsx": "react",
+      "moduleResolution": "node",
+      "forceConsistentCasingInFileNames": true,
+      "noImplicitReturns": true,
+      "noImplicitThis": true,
+      "noImplicitAny": true,
+      "strictNullChecks": true,
+      "stripInternal": true,
+      "suppressImplicitAnyIndexErrors": true,
+      "noUnusedLocals": true,
+      "declaration": true,
+      "allowSyntheticDefaultImports": true,
+      "experimentalDecorators": true,
+      "emitDecoratorMetadata": true,
+      "esModuleInterop": true,
+      "outDir": "./dist/",
+      "plugins": [
+        {
+          "name": "typescript-tslint-plugin",
+          "alwaysShowRuleFailuresAsWarnings": false,
+          "ignoreDefinitionFiles": true,
+          "configFile": "./tslint.json",
+          "suppressWhileTypeErrorsPresent": false
+        }
+      ],
+      "typeRoots": [
+        "src/@types",
+        "node_modules/@types"
+      ]
+    },
+    "exclude": [
+      "node_modules",
+      "__tests__",
+      "__mocks__",
+      "dist"
+    ]
+  }
