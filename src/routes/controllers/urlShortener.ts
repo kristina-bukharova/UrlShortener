@@ -17,9 +17,7 @@ export default class UrlShortener extends Route {
 
     public initializeRoutes() {
         this.router.post("/shorten/", this.getShortenedUrl.bind(this));
-
         this.router.get("/urls/:urlHash", this.getUrlDetailsFromHash.bind(this));
-
         this.router.get("/:urlHash", this.redirectToFullUrl.bind(this));
     }
 
