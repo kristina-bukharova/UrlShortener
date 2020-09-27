@@ -1,5 +1,5 @@
 import { Pool } from 'pg';
-import { IDatabaseClient } from './IDatabase';
+import { IDatabaseClient } from './IDatabaseClient';
 
 export default class PostgresDatabaseClient implements IDatabaseClient {
     private pool: Pool;

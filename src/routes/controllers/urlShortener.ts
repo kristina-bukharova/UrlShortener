@@ -1,6 +1,6 @@
 import Express from "express";
 import { Converter } from "../../utils/converter";
-import { IDatabaseClient } from "../../database/IDatabase";
+import { IDatabaseClient } from "../../database/IDatabaseClient";
 import Route from "../route";
 import UrlValidator from "../../utils/urlValidator";
 

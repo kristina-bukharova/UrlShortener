@@ -1,7 +1,7 @@
 import Server from './server';
 import Dotenv from "dotenv";
 import UrlShortener from './routes/controllers/urlShortener';
-import PostgresDatabaseClient from './database/postgresDB';
+import PostgresDatabaseClient from './database/postgresClient';
 import { PoolConfig } from 'pg';
 
 Dotenv.config();
