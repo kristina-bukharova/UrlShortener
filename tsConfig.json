@@ -28,15 +28,6 @@
       "emitDecoratorMetadata": true,
       "esModuleInterop": true,
       "outDir": "./dist/",
-      "plugins": [
-        {
-          "name": "typescript-tslint-plugin",
-          "alwaysShowRuleFailuresAsWarnings": false,
-          "ignoreDefinitionFiles": true,
-          "configFile": "./tslint.json",
-          "suppressWhileTypeErrorsPresent": false
-        }
-      ],
       "typeRoots": [
         "src/@types",
         "node_modules/@types"
