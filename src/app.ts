@@ -1,5 +1,5 @@
 import Server from './server';
-import Dotenv from "dotenv";
+import * as Dotenv from "dotenv";
 import UrlShortener from './routes/controllers/urlShortener';
 import PostgresDatabaseClient from './database/postgresDB';
 import { PoolConfig } from 'pg';
